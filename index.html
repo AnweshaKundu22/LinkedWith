@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="icon" href="Images/Amazon_favicon.png">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>LinkedIn Clone</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="linkedIn icon"></a>
+
+            <div class="search-box">
+                <img src="images/search.png" alt="" onclick="toggleSearch()">
+                <input class="insert" type="text" placeholder="Search" id="searchBar">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="index.html" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a><img src="images/message.png"><span>Messaging</span></a></li>
+                <li><a><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.jpeg" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- -------------------profile-drop-down-menu------------------------>
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.jpeg">
+                    <div>
+                        <h3>Anwesha Kundu</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback <i class="fa-solid fa-angle-up rotate"></i></p>
+                </a>
+                <a class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy <i class="fa-solid fa-angle-up rotate"></i></p>
+                </a>
+                <a class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support <i class="fa-solid fa-angle-up rotate"></i></p>
+                </a>
+                <a class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility <i class="fa-solid fa-angle-up rotate"></i></p>
+                </a>
+                <a class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout <i class="fa-solid fa-angle-up rotate"></i></p>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------------- navbar close------------------------->
+    
+    <div class="container">
+
+        <!-- -----------------left-sidebar------------------ -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/Cover-Pic.jpg" width="100%" style="border-radius: 10px 10px 0 0;">
+                <div class="sidebar-profile-info">
+                    <img src="images/user-1.jpeg">
+                    <h1>Anwesha Kundu</h1>
+                    <h3>Web Developer</h3>
+                    <ul>
+                        <li>Your profile views <span>168</span></li>
+                        <li>Your post views <span>437</span></li>
+                        <li>Your connections <span>812</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a><img src="images/items.png"> My Items</a>
+                    <a><img src="images/premium.png"> Try Premium</a>
+                </div>
+            </div>
+
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a><img src="images/recent.png"> Web Development</a>
+                <a><img src="images/recent.png"> User Interface</a>
+                <a><img src="images/recent.png"> JavaScript</a>
+                <a><img src="images/recent.png"> Java Programming</a>
+                <a><img src="images/recent.png"> Online Learning</a>
+                <a><img src="images/recent.png"> Code Better</a>
+
+                <h3>GROUPS</h3>
+                <a><img src="images/group.png"> Web Design Group</a>
+                <a><img src="images/group.png"> HTML & CSS Learners</a>
+                <a><img src="images/group.png"> Java Developers Community</a>
+                <a><img src="images/group.png"> Learn Coding Online</a>
+
+                <h3>HASHTAG</h3>
+                <a><img src="images/hashtag.png"> webdevelopment</a>
+                <a><img src="images/hashtag.png"> userinterface</a>
+                <a><img src="images/hashtag.png"> onlinelearning</a>
+
+                <div class="discover-more-link">
+                    <a>Discover more</a>
+                </div>
+            </div>
+
+            <p id="showMoreLink" onclick="toggleActivity()">Show more <i class="fa-solid fa-angle-down"></i></p>
+        </div>
+
+
+        <!-- ----------------------main-content-------------------->
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/user-1.jpeg">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+
+                <div class="create-post-links">
+                    <li><span><img src="images/photo.png">Photo</span></li>
+                    <li><span><img src="images/video.png">Video</span></li>
+                    <li><span><img src="images/event.png">Event</span></li>
+                    <li><span><img src="images/post.png">Post</span></li>
+                </div>
+            </div>
+
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>Top <img src="images/down-arrow.png"></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h1>Debika Basu</h1>
+                        <small>Core member at Google DSC- BWU | Tech Enthusiast</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The success of every websites depends on search engine optimisation and digital marketing
+                    strategy. If you are on first page of all major search engines then you are ahead among your 
+                    competitors.
+                </p>
+                <img src="images/post-image-1.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/celebrate.png">
+                        <span class="liked-users">Abhishek Sarkar and 76 others</span>
+                        <span class="liked-users-smallscreen">77</span>
+                    </div>
+
+                    <div>
+                        <span class="cmnt_share">22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-thumbs-up"></i></span><span class="name"> Like</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-comment"></i></span><span class="name"> Comment</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-solid fa-share"></i></span><span class="name"> Repost</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-paper-plane"></i></span><span class="name"> Send</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h1>Debika Basu</h1>
+                        <small>Core member at Google DSC- BWU | Tech Enthusiast</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The success of every websites depends on search engine optimisation and digital marketing
+                    strategy. If you are on first page of all major search engines then you are ahead among your 
+                    competitors.
+                </p>
+                <img src="images/post-image-1.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/celebrate.png">
+                        <span class="liked-users">Abhishek Sarkar and 76 others</span>
+                        <span class="liked-users-smallscreen">77</span>
+                    </div>
+
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-thumbs-up"></i></span><span class="name"> Like</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-comment"></i></span><span class="name"> Comment</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-solid fa-share"></i></span><span class="name"> Repost</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-paper-plane"></i></span><span class="name"> Send</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h1>Debika Basu</h1>
+                        <small>Core member at Google DSC- BWU | Tech Enthusiast</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The success of every websites depends on search engine optimisation and digital marketing
+                    strategy. If you are on first page of all major search engines then you are ahead among your 
+                    competitors.
+                </p>
+                <img src="images/post-image-1.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/celebrate.png">
+                        <span class="liked-users">Abhishek Sarkar and 76 others</span>
+                        <span class="liked-users-smallscreen">77</span>
+                    </div>
+
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-thumbs-up"></i></span><span class="name"> Like</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-comment"></i></span><span class="name"> Comment</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-solid fa-share"></i></span><span class="name"> Repost</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-paper-plane"></i></span><span class="name"> Send</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h1>Debika Basu</h1>
+                        <small>Core member at Google DSC- BWU | Tech Enthusiast</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The success of every websites depends on search engine optimisation and digital marketing
+                    strategy. If you are on first page of all major search engines then you are ahead among your 
+                    competitors.
+                </p>
+                <img src="images/post-image-1.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/celebrate.png">
+                        <span class="liked-users">Abhishek Sarkar and 76 others</span>
+                        <span class="liked-users-smallscreen">77</span>
+                    </div>
+
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-thumbs-up"></i></span><span class="name"> Like</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-comment"></i></span><span class="name"> Comment</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-solid fa-share"></i></span><span class="name"> Repost</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-paper-plane"></i></span><span class="name"> Send</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h1>Debika Basu</h1>
+                        <small>Core member at Google DSC- BWU | Tech Enthusiast</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The success of every websites depends on search engine optimisation and digital marketing
+                    strategy. If you are on first page of all major search engines then you are ahead among your 
+                    competitors.
+                </p>
+                <img src="images/post-image-1.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/celebrate.png">
+                        <span class="liked-users">Abhishek Sarkar and 76 others</span>
+                        <span class="liked-users-smallscreen">77</span>
+                    </div>
+
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-thumbs-up"></i></span><span class="name"> Like</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-comment"></i></span><span class="name"> Comment</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-solid fa-share"></i></span><span class="name"> Repost</span>
+                        </div>
+                    </div>
+                    <div class="post-activity-link">
+                        <div class="post-activity-link1">
+                            <span class="icon"><i class="fa-regular fa-paper-plane"></i></span><span class="name"> Send</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------------right-sidebar----------------------->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" class="info-icon">
+                <h3>Trending News</h3>
+                <div>
+                    <a>High demand for skilled manpower</a>
+                    <span>19h ago &middot; 1,979 readers</span>
+                </div>
+
+                <div>
+                    <a>Careers growing horizontally too</a>
+                    <span>1d ago &middot; 11,252 readers</span>
+                </div>
+
+                <div>
+                    <a>Less work visa for US, more for UK</a>
+                    <span>1d ago &middot; 9,979 readers</span>
+                </div>
+
+                <div>
+                    <a>More hiring = higher confidence?</a>
+                    <span>12h ago &middot; 1,252 readers</span>
+                </div>
+
+                <div>
+                    <a>Student housing demand soars</a>
+                    <span>2d ago &middot; 17,934 readers</span>
+                </div>
+                    
+                <a class="read-more-link">Read More
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of Web Design</p>
+                <div>
+                    <img src="images/user-1.jpeg">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a>About</a>
+                <a>Accessibility</a>
+                <a>Help Center</a>
+                <a>Privacy Policy</a>
+                <a>Advertising</a>
+                <a>Get the App</a>
+                <a>More</a>
+
+                <div class="copywrite-msg">
+                    <img src="images/logo.png">
+                    <p>LinkedIn clone &copy; 2023. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

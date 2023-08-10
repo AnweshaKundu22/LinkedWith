@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="icon" href="Images/Amazon_favicon.png">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>LinkedIn Clone</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="linkedIn icon"></a>
+            <div class="search-box">
+                <img src="images/search.png" alt="" onclick="toggleSearch()">
+                <input class="insert" type="text" placeholder="Search" id="searchBar">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="index.html"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a><img src="images/message.png"><span>Messaging</span></a></li>
+                <li><a><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.jpeg" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- -------------------profile-drop-down-menu------------------------>
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.jpeg">
+                    <div>
+                        <h3>Anwesha Kundu</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback <i class="fa-solid fa-angle-up rotate"></i></p>
+                </a>
+                <a class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy <i class="fa-solid fa-angle-up rotate"></i></p>
+                </a>
+                <a class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support <i class="fa-solid fa-angle-up rotate"></i></p>
+                </a>
+                <a class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility <i class="fa-solid fa-angle-up rotate"></i></p>
+                </a>
+                <a class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout <i class="fa-solid fa-angle-up rotate"></i></p>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------------- navbar close------------------------->
+    
+    <div class="container profile">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="images/Cover-Pic.jpg" width="100%" style="border-radius: 10px 10px 0 0;">
+
+                <div class="profile-container-inner">
+                    <img src="images/user-1.jpeg" class="profile-pic">
+                    <h1>Anwesha Kundu<span><i class="fa-solid fa-pencil"></i></span></h1>
+                    <b>Final year student || Tech Enthusiast || Learning Web Dev || BWU'24</b>
+                    <p>Kolkata, West Bengal, India &middot; <a>Contact info</a></p>
+                    <a>500+ connections</a>
+
+                    <div class="profile-btn">
+                        <a class="open-to">Open to</a>
+                        <a class="add-profile-section">Add profile section</a>
+                        <a class="more">More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>About<span><i class="fa-solid fa-pencil"></i></span></h2>
+                <p>Hello,<br>My name is Anwesha Kundu, I am a Computer Science Engineering Student. I have 
+                a strong interest in programming and software engineering and have a quite good knowledge in 
+                database management system. I'm a passionate learner and love to learn new skills.</p>
+            </div>
+
+            <div class="profile-description">
+                <h2>Education<span><i class="fa-solid fa-plus"></i><i class="fa-solid fa-pencil"></i></span></h2>
+                <div class="profile-desc-row">
+                    <img src="images/brainware.png">
+                    <div>
+                        <h3>Brainware University</h3>
+                        <b>Bachelor of Technology - Btech, Computer Science</b>
+                        <b>2020 - 2024</b>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="images/augustine.png">
+                    <div>
+                        <h3>St. Augustine's Day School, Shyamnagar</h3>
+                        <b>Senior High School</b>
+                        <b>Apr 2005 - Mar 2020</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <div class="profile-description-box">
+                    <h2>Skills<span><i class="fa-solid fa-plus"></i><i class="fa-solid fa-pencil"></i></span></h2>
+                    <div class="profile-desc-skillrow">
+                        <a><b>Database Management System (DBMS)</b></a>
+                        <p><i class="fa-solid fa-user-group"></i> <a>1 endorsement</a></p>
+                    </div>
+                    <hr>
+                    <div class="profile-desc-skillrow">
+                        <a><b>Python (Programming Language)</b></a>
+                    </div>
+                    <hr>
+                    <div class="profile-desc-skillrow">
+                        <a><b>Java</b></a>
+                        <p><i class="fa-solid fa-user-group"></i> <a>2 endorsement</a></p>
+                    </div>
+                </div>
+
+                <div class="profile-description-footer">
+                    <hr>
+                    <a class="skills-link">Show all 10 skills <img src="images/right-arrow.png"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------------------profile-sidebar---------------------- -->
+        <div class="profile-sidebar">
+            <div class="sidebar-ad sb-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of Web Design</p>
+                <div>
+                    <img src="images/user-1.jpeg">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="images/user-6.png">
+                    <div>
+                        <h2>Priyanjali Sarkar</h2>
+                        <p>Student at Adamas University</p>
+                        <a>Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/user-8.png">
+                    <div>
+                        <h2>Prasant Biswas</h2>
+                        <p>Student at Amity University</p>
+                        <a>Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/user-7.png">
+                    <div>
+                        <h2>Aishwarya Singh</h2>
+                        <p>Student at Amity University</p>
+                        <a>Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/user-9.png">
+                    <div>
+                        <h2>Ashish Gupta</h2>
+                        <p>Student at Brainware University</p>
+                        <a>Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/user-10.png">
+                    <div>
+                        <h2>Snehasish Ghosh</h2>
+                        <p>Student at JIS University</p>
+                        <a>Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a>About</a>
+            <a>Accessibility</a>
+            <a>Help Center</a>
+            <a>Privacy Policy</a>
+            <a>Advertising</a>
+            <a>Get the App</a>
+            <a>More</a>
+
+            <div class="copywrite-msg">
+                <img src="images/logo.png">
+                <p>LinkedIn Clone &copy; 2023. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
