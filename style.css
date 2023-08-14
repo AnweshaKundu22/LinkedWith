@@ -1089,6 +1089,63 @@ a{
 
 @media (max-width: 950px){  /*profile-dropdown*/
 
+    .skills-link{
+        font-size: 14px;
+    }
+
+    .skills-link img{
+        width: 18px;
+    }
+
+    .profile-desc-skillrow b{
+        font-size: 14px;
+    }
+
+    .profile-desc-row img{
+        width: 40px;
+    }
+    
+    .profile-desc-row h3{
+        font-size: 14px;
+    }
+    
+    .profile-desc-row b{
+        font-size: 12px;
+    }
+
+    .profile-description h2{
+        font-size: 20px;
+    }
+    
+    .profile-description p{
+        font-size: 13px;
+    }
+
+    .profile-container h1{
+        font-size: 24px;
+    }
+    
+    .profile-container b{
+        font-size: 15px;
+    }
+    
+    .profile-container p{
+        font-size: 13px;
+    }
+    
+    .profile-container p a{
+        font-size: 13px;
+    }
+    
+    .profile-container a{
+        font-size: 13px;
+    }
+
+    .profile-pic{
+        width: 130px;
+        margin-top: -65px;
+    }
+
     .post-author small{
         font-size: 11px;
     }
@@ -1236,6 +1293,49 @@ a{
     
     .post-stats img{
         width: 13px;
+    }
+}
+
+@media (max-width: 880px){
+
+    .profile-btn{
+        margin: 10px 0;
+    }
+    
+    .profile-btn a{
+        padding: 6px 12px;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .fa-plus, .fa-pencil{
+        padding: 13px;
+        font-size: 18px;
+    }
+
+    .profile-container h1{
+        font-size: 20px;
+    }
+    
+    .profile-container b{
+        font-size: 13.25px;
+    }
+    
+    .profile-container p{
+        font-size: 12px;
+    }
+    
+    .profile-container p a{
+        font-size: 12px;
+    }
+    
+    .profile-container a{
+        font-size: 12px;
+    }
+
+    .profile-pic{
+        width: 110px;
+        margin-top: -55px;
     }
 }
 
@@ -1478,39 +1578,6 @@ a{
 
     /* -------------------Profile-page--------------- */
 
-    .profile-main p{
-        font-size: .8rem;
-    }
-
-    .profile-main i{
-        font-size: 1.1rem;
-        padding: 0 10px;
-    }
-
-    .profile-container-inner h1{
-        font-size: 1.6rem;
-    }
-
-    .profile-container-inner b{
-        font-size: 1rem;
-    }
-
-    .profile-container-inner a{
-        font-size: .8rem;
-    }
-
-    .profile-btn{
-        font-size: .8rem;
-        padding: 5px 0;
-    }
-
-    .profile-main h2{
-        font-size: 1.3rem;
-    }
-
-    .profile-desc-row h3 {
-        font-size: 1rem;
-    }
     
 }
 
@@ -1691,6 +1758,14 @@ a{
 }
 
 @media (max-width: 650px){
+    
+    .profile-desc-row b{
+        font-size: 11.5px;
+    }
+
+    .sidebar-people p{
+        font-size: 10.5px;
+    }
 
     .post-stats img{
         width: 13px;
@@ -1737,6 +1812,69 @@ a{
 }
 
 @media (max-width: 620px){      /*1 division*/
+
+    .profile-description-footer a{
+        font-size: 16px;
+    }
+
+    .profile-description-footer a img{
+        width: 20px;
+    }
+
+    .profile-desc-skillrow b{
+        font-size: 16px;
+    }
+
+    .profile-desc-row img{
+        width: 50px;
+    }
+    
+    .profile-desc-row h3{
+        font-size: 16px;
+    }
+    
+    .profile-desc-row b{
+        font-size: 13px;
+    }
+
+    .profile-description h2{
+        font-size: 22px;
+    }
+    
+    .profile-description p{
+        font-size: 15px;
+    }
+
+    .profile-container b{
+        font-size: 15px;
+    }
+
+    .profile-container-inner span{
+        font-size: 25px;
+    }
+    
+    .profile-pic{
+        width: 130px;
+        margin-top: -65px;
+    }
+    
+    .profile-container h1{
+        font-size: 25px;
+    }
+    
+    .profile-container p{
+        font-size: 14px;
+    }
+    
+    .profile-container a{
+        font-size: 13px;
+    }
+    
+    .profile-btn a{
+        padding: 6px 15px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
 
     .post-author img{
         width: 45px;
@@ -1814,7 +1952,6 @@ a{
         padding: 5px 3px 5px 15px;
     }
     
-
     .post-stats{
         justify-content: space-between;
         font-size: 12px;
@@ -1938,10 +2075,22 @@ a{
         margin: 10px 0;
         padding: 5px 20px;
     }
-
+    
+    .sb-ad{
+        padding: 15px 25px;
+        margin: 12px 0;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+    
     .sb-ad img{
         width: 60px;
         margin: 4px;
+    }
+
+    .fa-plus, .fa-pencil{
+        padding: 13px;
+        font-size: 20px;
     }
 }
 
@@ -1998,6 +2147,69 @@ a{
 }
 
 @media (max-width: 493px){
+
+    .profile-description-footer a{
+        font-size: 14px;
+    }
+
+    .profile-description-footer a img{
+        width: 18px;
+    }
+
+    .profile-desc-skillrow b{
+        font-size: 14px;
+    }
+
+    .profile-desc-row img{
+        width: 40px;
+    }
+    
+    .profile-desc-row h3{
+        font-size: 14px;
+    }
+    
+    .profile-desc-row b{
+        font-size: 12px;
+    }
+
+    .profile-description h2{
+        font-size: 20px;
+    }
+    
+    .profile-description p{
+        font-size: 13px;
+    }
+
+    .fa-plus, .fa-pencil{
+        font-size: 15px;
+    }
+
+    .profile-container b{
+        font-size: 13px;
+    }
+    
+    .profile-pic{
+        width: 110px;
+        margin-top: -55px;
+    }
+    
+    .profile-container h1{
+        font-size: 20px;
+    }
+    
+    .profile-container p{
+        font-size: 12px;
+    }
+    
+    .profile-container a{
+        font-size: 12px;
+    }
+    
+    .profile-btn a{
+        padding: 6px 12px;
+        margin-right: 8px;
+        font-size: 11px;
+    }
 
     .post-stats img{
         width: 13px;
@@ -2061,6 +2273,10 @@ a{
 }
 
 @media (max-width: 450px){
+    
+    .profile-desc-row b{
+        font-size: 11.5px;
+    }
 
     .sidebar-profile-link a{
         font-size: 13px;
@@ -2109,6 +2325,15 @@ a{
 
 @media (max-width: 425px){
 
+    .fa-plus, .fa-pencil{
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .profile-pic{
+        width: 100px;
+        margin-top: -50px;
+    }
 
     .logo img{
         margin-right: 17px;
@@ -2125,6 +2350,34 @@ a{
 }
 
 @media (max-width: 400px){
+
+    .profile-desc-skillrow b{
+        font-size: 12.5px;
+    }
+
+    .profile-desc-skillrow p{
+        font-size: 11px;
+    }
+
+    .profile-desc-row img{
+        width: 32px;
+    }
+    
+    .profile-desc-row h3{
+        font-size: 12.5px;
+    }
+    
+    .profile-desc-row b{
+        font-size: 11px;
+    }
+
+    .profile-description h2{
+        font-size: 17px;
+    }
+    
+    .profile-description p{
+        font-size: 12px;
+    }
     
     .profile-menu-wrap{
         right: 3.5%;
@@ -2152,12 +2405,72 @@ a{
 
 @media (max-width: 370px){
 
+    .profile-container b{
+        font-size: 11px;
+    }
+    
+    .profile-pic{
+        width: 90px;
+        margin-top: -45px;
+    }
+    
+    .profile-container h1{
+        font-size: 18px;
+    }
+    
+    .profile-container p{
+        font-size: 11px;
+    }
+
+    .profile-container p a{
+        font-size: 11px;
+    }
+    
+    .profile-container a{
+        font-size: 11px;
+    }
+    
+    .profile-btn a{
+        padding: 4px 10px;
+        margin-right: 6px;
+        font-size: 10px;
+    }
+
+    .sidebar-people{
+        font-size: 11px;
+    }
+    
+    .sidebar-people h3{
+        font-size: 15px;
+    }
+    
+    .sidebar-people-row img{
+        width: 32px;
+    }
+    
+    .sidebar-people-row h2{
+        font-size: 12px;
+    }
+    
+    .sidebar-people-row a{
+        margin: 6px 0;
+        padding: 5px 15px;
+    }
+
     .sidebar-ad img{
         width: 50px;
     }
 
     .logo img{
         margin-right: 13px;
+    }
+
+    .profile-description-footer a{
+        font-size: 12px;
+    }
+
+    .profile-description-footer a img{
+        width: 15px;
     }
 
 }
@@ -2201,6 +2514,12 @@ a{
 }
 
 @media (max-width: 330px){      /* Responsive Lettering*/
+    
+    .profile-pic{
+        width: 80px;
+        margin-top: -40px;
+        padding: 3px;
+    }
     
     .post h1, .right-sidebar a {
         font-size: .8rem;
@@ -2274,6 +2593,41 @@ a{
 
 @media (max-width: 290px){
 
+    .profile-description h2{
+        font-size: 15px;
+    }
+    
+    .profile-description p{
+        font-size: 11px;
+    }
+    
+    .profile-btn a{
+        padding: 3px 7px;
+        margin-right: 4px;
+        font-size: 9.5px;
+    }
+
+    .sidebar-people{
+        font-size: 10px;
+    }
+    
+    .sidebar-people h3{
+        font-size: 13px;
+    }
+    
+    .sidebar-people-row img{
+        width: 28px;
+    }
+    
+    .sidebar-people-row h2{
+        font-size: 11.5px;
+    }
+    
+    .sidebar-people-row a{
+        margin: 4px 0;
+        padding: 3px 12px;
+    }
+
     .sidebar-profile-info img{
         width: 75px;
         margin-top: -38px;
@@ -2311,6 +2665,10 @@ a{
 }
 
 @media (max-width: 280px){
+
+    .sidebar-people{
+        font-size: 9px;
+    }
 
     .sidebar-profile-link a img{
         margin-right: 5px;
